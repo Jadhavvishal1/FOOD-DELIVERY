@@ -1,0 +1,278 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+/* css variables */
+html{
+    scroll-behavior: smooth;
+}
+:root{
+--height:30px;
+}
+/* contact sectionn */
+#contact{
+    position: relative;
+     height:var(--height)
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('bg.jpg');
+}
+footer{
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.contact-box input,
+.contact-box textarea{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.contact-box form{
+    width: 50%;
+
+}
+.contact-box label{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    color: chartreuse;
+
+}
+/* Navigation Bar */
+#Navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    /* backgroundcolor: black; */
+    
+}
+#Navbar ul{
+    /* background-color: black; */
+    /* opacity: 0.7; */
+}
+/* navigation bar: logo and image */
+#logo{
+margin: 4px;
+
+}
+#logo img{
+margin: 4px;
+}
+/* navigation bar: list styling */
+#Navbar{
+    /* position: relative; */
+    top: 0px;
+    left: 0px;
+}
+#Navbar::before{
+    content: '';
+    background-color:darkgray;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+     bottom: 0;
+     right: 0;
+}
+
+ #Navbar ul{
+    display: flex;
+    FONT-WEIGHT: 600;
+    padding-right: 60px;
+}
+#Navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#Navbar ul li a{
+    display: block;
+padding: 3px 10px;
+border-radius: 25px;
+text-decoration: none;
+color: white;
+
+}
+h4{
+    color: red;
+    background-color: white;
+}
+#Navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+    margin: 0px;
+}
+#home::before{
+    content: '';
+    background: url('background.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+    top: 0px;
+    left: 0px;
+}
+
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: red;
+    border: 2px solid lightgray;
+}
+#home p{
+    color: white;
+    text-align: center;
+    margin: 2px;
+
+}
+.btn{
+    background-color: yellow;
+    color:red;
+    padding: 12px;
+    margin: 8px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1.5rem;
+}
+.btn:hover{
+background-color: lightgoldenrodyellow;
+color: black;
+border-radius: 50px;
+}
+.center{
+    text-align: center;
+}
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 10px;
+}
+.h-secondary{
+
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    margin: 3px;
+    padding: 4px;
+    border-radius: 34px;
+    background-color: lightgrey;
+}
+#services  .box img{
+    height:160px ;
+    display: block;
+    margin: auto;
+}
+h2{
+    background-color: white;
+    color:darkblue;
+}
+/* client section */
+#client-section{
+/* height: 344px; */
+
+}
+#client-section::before{
+    content: " ";
+    position: absolute;
+    background: url('Contact.jpg');
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.6;
+}
+h3{
+
+
+    text-align: center;
+    background-color: white;
+    color: lightskyblue;
+}
+
+#client{
+    display:flex;
+justify-content: center;
+align-items: center;
+margin: 2px;
+padding: 4px;
+
+}
+#client img{
+    height: 100px;
+    padding-right: 60px;
+
+}
+.item{
+    padding: 44px;
+}
+*{
+    /* margin: 0px; */
+    /* padding: 0px; */
+}
+
+element.style {
+}
+ .tery{
+    font-size: 1.rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 6px;
+    color:black;
+    background-color:wheat;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.tery:hover{
+    background-color: beige;
+    color: black;
+
+}
+.contact-box .form-group label {
+    font-size: 1.3rem;
+    display: inline-block;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;}

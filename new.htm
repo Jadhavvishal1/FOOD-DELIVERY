@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .counter ul{
+counter-reset: ordered-list;
+    }
+    .counter li::before{
+        counter-increment: ordered-list;
+        content:   counter(ordered-list)') ';
+        /* background-color: red; */
+        padding: 2px;
+        list-style: none;
+    }
+</style>
+<body>
+    <div class="counter">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</div>
+</body>
+</html>
